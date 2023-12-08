@@ -14,26 +14,61 @@
 }
 .logi {
     margin-left: 40px;
-
 }
 
-.menu{
-    width: 380px;
+.menu {
+    width: 100%;
     height: 250px;
+    border-radius: 10px;
 }
 
-.quantite{
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 17px;
-  padding: 1em 2.7em;
-  font-weight: 500;
-  background: #1F2937;
-  color: white;
-  border: none;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.6em;
-  cursor: pointer;
+.quantity-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.moin {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    font-size: 17px;
+    padding: 7px 20px;
+    font-weight: 500;
+    background: #1f2937;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+}
+.quantite {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    font-size: 17px;
+    padding: 7px 20px;
+    font-weight: 500;
+    background: #1f2937;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+}
+.plus {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    font-size: 17px;
+    padding: 7px 20px;
+    font-weight: 500;
+    background: #1f2937;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
 }
 .App-header {
     background-color: #282c34;
@@ -63,10 +98,74 @@
     display: flex; /* Afficher les blocs en ligne */
     overflow-x: auto; /* Activer la barre de défilement horizontale si nécessaire */
     white-space: nowrap; /* Empêcher le texte de passer à la ligne */
-    width: 100%; /* Largeur maximale du contenant, ajustez selon vos besoins */
+    gap: 40px;
+    padding: 30px;
 }
 
-.shopsblocks {
-    flex: 0 0 auto; /* Les blocs ne changent pas de largeur */
-    margin-right: 20px; /* Marge entre les blocs, ajustez selon vos besoins */
+.cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bubble {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 9px;
+    font-size: 12px;
+    margin-bottom: 31px;
+}
+
+/* Style pour la section des restaurants */
+.restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.restaurant {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+}
+
+.restaurant img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.restaurant h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.restaurant p {
+    font-size: 1em;
+    color: #666;
+}
+
+.restaurant button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.restaurant button:hover {
+    background-color: #0056b3;
 }
