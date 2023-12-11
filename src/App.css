@@ -95,9 +95,9 @@
 }
 
 .shopsblocks {
-    display: flex; /* Afficher les blocs en ligne */
-    overflow-x: auto; /* Activer la barre de défilement horizontale si nécessaire */
-    white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+    display: flex; 
+    overflow-x: auto; 
+    white-space: nowrap; 
     gap: 40px;
     padding: 30px;
 }
@@ -116,7 +116,7 @@
     margin-bottom: 31px;
 }
 
-/* Style pour la section des restaurants */
+
 .restaurants {
     display: flex;
     flex-wrap: wrap;

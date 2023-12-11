@@ -108,21 +108,6 @@ function App() {
                                     alt='Image du menu'
                                 />
                             </div>
-                            <div className='header--address'>
-                                <input
-                                    type='text'
-                                    name=''
-                                    id=''
-                                    placeholder='*****'
-                                />
-                                <p>to</p>
-                                <input
-                                    type='text'
-                                    name=''
-                                    id=''
-                                    placeholder='******'
-                                />
-                            </div>
                             <div className='header--buttons'>
                                 <div>
                                     <a href='#'>Sign In</a>
@@ -154,6 +139,7 @@ function App() {
                     <div className='container'>
                         <div className='shops--title'>
                             <h1>Offres du jour</h1>
+                            <h2>Commandez de nouveau </h2>
                         </div>
                         <div className='shopsblocks'>
                             <BurgerBlock
