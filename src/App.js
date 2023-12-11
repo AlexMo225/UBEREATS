@@ -1,15 +1,19 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Monheader } from "./Monheader.js";
-import RestoImage1 from "./kebab.jpg";
-import RestoImage2 from "./kfc.jpeg";
+import RestoImage1 from "./img/kebab.jpg";
+import RestoImage2 from "./img/kfc.jpeg";
+import RestoImage3 from "./img/bk.png";
+import RestoImage4 from "./img/McDonalds-centre-commercial-BelEst_thumb.jpg";
+import RestoImage5 from "./img/bbzl.png";
+import RestoImage6 from "./img/d341cfe970c4ffa62133bf1781152b2e.jpg";
 import "./App.css";
 import "./main.css";
 import "./index.css";
 import Logo from "./logo.svg";
-import Macdo from "./Image6.jpeg";
-import Kebab from "./ptite-galette.png";
-import KFC from "./176695810-moscou-russie-9-juillet-2020-beaucoup-d-ailes-chaudes-ou-de-lanières-de-poulet-kfc-dans-un-seau.jpg";
-import Sandwich from "./istockphoto-157431311-612x612.jpg";
+import Macdo from "./img/Image6.jpeg";
+import Kebab from "./img/ptite-galette.png";
+import KFC from "./img/176695810-moscou-russie-9-juillet-2020-beaucoup-d-ailes-chaudes-ou-de-lanières-de-poulet-kfc-dans-un-seau.jpg";
+import Sandwich from "./img/istockphoto-157431311-612x612.jpg";
 
 // Composant BurgerBlock
 function BurgerBlock({
@@ -54,8 +58,12 @@ function BurgerBlock({
 function App() {
     const [cart, setCart] = useState(0);
     const [restaurants, setRestaurants] = useState([
-        { id: 1, name: "Restaurant 1", isOpen: false, image: RestoImage1 },
-        { id: 2, name: "Restaurant 2", isOpen: true, image: RestoImage2 },
+        { id: 1, name: "Kebab Momo", isOpen: false, image: RestoImage1 },
+        { id: 2, name: "kfc", isOpen: true, image: RestoImage2 },
+        { id: 3, name: "Burger King", isOpen: true, image: RestoImage3 },
+        { id: 4, name: "McDonald", isOpen: true, image: RestoImage4 },
+        { id: 5, name: "BaBa ZuLu", isOpen: true, image: RestoImage5 },
+        { id: 6, name: "Pizza Rabit", isOpen: true, image: RestoImage6 },
         // Ajoutez d'autres restaurants ici...
     ]);
 
